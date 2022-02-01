@@ -1,0 +1,21 @@
+/* .navbar.navbar-expand-lg.navbar-light.bg-light  */
+
+
+.test{
+
+  background-color: #005288;
+  color: white;
+  font-weight: 600;
+}
+.nav-item{
+  color: white;
+}
+.navbar-dark .navbar-nav .nav-link.active{
+  color: white;
+}
+.dropdown-item.active, .dropdown-item:active {
+  background-color: #C0C2C4;
+}
+.logo-img{
+  height: 80px;
+}

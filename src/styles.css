@@ -1,0 +1,65 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import "~font-awesome/css/font-awesome.css";
+body{
+  font-family: sans-serif;
+}
+.test{
+
+  background-color: #005288;
+  color: white;
+  font-weight: 600;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.btn.btn-outline-primary {
+  color: #005288;
+  border-color: #005288;
+}
+
+.btn-outline-primary:hover {
+  color: #fff;
+  background-color: #005288;
+  border-color: #005288;
+}
+.btn.btn-primary {
+  color: white;
+  background-color: #005288;
+  border-color: #005288;
+}
+.btn.btn-outline{
+  color: #005288;;
+  background-color:white ;
+  border-color: #005288;
+}
+.btn.btn-outline:hover{
+  color: white;
+  background-color: #005288;
+  border-color: #005288;
+}
+.btn-primary:hover {
+  color: #005288;;
+  background-color:white ;
+  border-color: #005288;
+}
+.ng-invalid.ng-touched{
+  border-color: red;
+}
+
+.error-block{
+  color: red;
+}
+/* style logos */
+.fill-primary{
+  fill: #005288;
+}
+.fill-white{
+  fill: white;
+}
+.blockquote-footer{
+    font-size: 14px;
+}
+.toolrow:hover{
+    background-color: #F2F3F4;
+}
