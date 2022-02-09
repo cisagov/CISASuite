@@ -3,6 +3,7 @@
 @import "~font-awesome/css/font-awesome.css";
 body{
   font-family: sans-serif;
+ background-color:#ececec;
 }
 .test{
 
@@ -62,4 +63,46 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 }
 .toolrow:hover{
     background-color: #F2F3F4;
+}
+
+
+.websiteTittle{
+  color: #BF0A30;
+  font-size: large;
+}
+/* cset, conpca cyberchamp pages styles */
+.sidecards{
+  height: 9rem;
+}
+ngb-carousel .wrapper {
+  position: relative;
+  height: 0;
+  padding-top: 55%; /* Keep ratio for 900x500 images */
+}
+
+ngb-carousel .wrapper>img {
+  position: absolute;
+  /* top: 0; */
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+ngb-carousel .carousel-control-next>span{
+    background-color: gray !important;
+}
+ngb-carousel .carousel-control-prev>span{
+  background-color: gray !important;
+}
+
+.mainsection mat-card{
+  height: fit-content;
+}
+.logocontainer :hover{
+    background-color: #ececec;
+}
+.carousel-indicators{
+  background-color: #ececec;
+}
+.carousel-caption{
+  color: #015288;
 }

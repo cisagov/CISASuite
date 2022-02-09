@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Color } from 'ng2-charts';
 
 @Component({
   selector: 'app-scores',
@@ -8,36 +8,77 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class ScoresComponent implements OnInit {
-//    single = [
-//         {
-//           "name": "Germany",
-//           "value": 8940000
-//         },
-//         {
-//           "name": "USA",
-//           "value": 5000000
-//         },
-//         {
-//           "name": "France",
-//           "value": 7200000
-//         },
-//         {
-//           "name": "UK",
-//           "value": 5200000
-//         },
-//         {
-//           "name": "Italy",
-//           "value": 7700000
-//         },
-//         {
-//           "name": "Spain",
-//           "value": 4300000
-//         }
-//       ];
-//   view: [number, number] = [700, 400];
-
-//   colorScheme:string='#5AA454';
-//   cardColor: string = '#232837';
+  defaultElevation = 3;
+  raisedElevation = 11;
+  dontshow:boolean=false;
+  dontshowpca:boolean=false;
+  dontshowmalcom:boolean=false;
+  dontshowcyberchamp:boolean=false;
+  chartData = [
+    {
+      data: [90,10],
+      label: 'Account A'
+    }
+  ];
+  chartLabels = [
+    ' 90 % Overall Scores',
+    
+  ];
+  colors: Color[] = [
+    {
+      backgroundColor: [
+        '#0078AE',
+        '#C0C2C4',
+      
+      ]
+    }
+  ];
+  chartOptions = {
+    responsive: true
+  };
+  // CSET chart
+  chartDataCSET = [
+    {
+      data: [90,10],
+      label: 'Account A'
+    }
+  ];
+  chartLabelsCSET = [
+    ' 85 % CSET Assestment Overall',
+    
+  ];
+// Con-pca chart
+chartDataConpca= [
+  {
+    data: [85,15],
+    label: 'Con-PCA'
+  }
+];
+chartLabelsConpca = [
+  ' 60 % Con-PCA Report Rate',
+  
+];
+//  Cyber-champ chart
+chartDataCyberchamp= [
+  {
+    data: [50,50],
+    label: 'Cyber-Champ'
+  }
+];
+chartLabelsCyberchamp = [
+  '50 % Training Cyber-Champ'
+  
+];
+// Malcom
+chartDataMalcom= [
+  {
+    data: [90,10],
+    label: 'Malcom '
+  }
+];
+chartLabelsMalcom = [
+  '60 % Malcom Assestment Overall'
+];
 
   constructor() { }
 
@@ -47,5 +88,25 @@ export class ScoresComponent implements OnInit {
   }
   onSelect(event:any){
       console.log(event)
+  }
+       
+  showinstalledCset(){
+    this.dontshow=true;
+  }
+  showinstalledPCA(){
+    this.dontshowpca=true;
+  }
+  showinstalledMalcom(){
+    this.dontshowmalcom=true;
+  }
+  showinstalledCyberchamp(){
+    this.dontshowcyberchamp=true;
+  }
+  openLink(){
+  
+    window.open('https://github.com/cisagov/cset/releases/download/v11.0.0.0/CSETStandAloneV11.exe');
+    window.open('https://github.com/cisagov/cset/releases/download/v11.0.0.0/CSETStandAloneV11.exe');
+    window.open('https://github.com/cisagov/cset/releases/download/v11.0.0.0/CSETStandAloneV11.exe');
+  
   }
 }
