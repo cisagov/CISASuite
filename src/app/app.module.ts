@@ -24,12 +24,22 @@ import {MatProgressBarModule} from '@angular/material/progress-bar';
 import {MatTabsModule} from '@angular/material/tabs';
 import { MatCardModule } from '@angular/material/card';
 import { ChartsModule } from 'ng2-charts';
+import { MaterialElevationDirective } from './material-elevation.directive';
+import { CsetComponent } from './cset/cset.component';
+import { MalcomComponent } from './malcom/malcom.component';
+import { ConpcaComponent } from './conpca/conpca.component';
+import { CyberchampComponent } from './cyberchamp/cyberchamp.component';
+
 
 
 const appRoutes : Routes =[
 { path: "" , component: MainPageComponent},
 { path:"toolsuite", component: ToolsuiteComponent},
 { path:"scores", component: ScoresComponent},
+{ path:"cset", component: CsetComponent},
+{ path:"malcom", component: MalcomComponent},
+{ path:"cyberchamp", component: CyberchampComponent},
+{ path:"conpca", component: ConpcaComponent},
 ]
 
 @NgModule({
@@ -39,9 +49,12 @@ const appRoutes : Routes =[
     MainPageComponent,
     ToolsuiteComponent,
     ScoresComponent,
-  
-
-  ],
+    MaterialElevationDirective,
+    CsetComponent,
+    MalcomComponent,
+    ConpcaComponent,
+    CyberchampComponent
+   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
