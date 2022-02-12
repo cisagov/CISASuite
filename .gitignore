@@ -38,3 +38,6 @@ testem.log
 Thumbs.db 
 /release-builds
 Installers
+/.firebaserc
+/.firebase
+firebase.json

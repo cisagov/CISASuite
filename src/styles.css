@@ -106,3 +106,9 @@ ngb-carousel .carousel-control-prev>span{
 .carousel-caption{
   color: #015288;
 }
+.lefside-section mat-card:hover{
+  background-color:  #F7F7F7;
+}
+.logo{
+  text-decoration: none;
+}
