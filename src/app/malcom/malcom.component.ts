@@ -12,7 +12,7 @@ export class MalcomComponent implements OnInit {
   dontshowpca:boolean=false;
   dontshowmalcom:boolean=false;
   dontshowcyberchamp:boolean=false;
-  currentRate =4.2;
+ 
   constructor() { }
 
   ngOnInit(): void {
