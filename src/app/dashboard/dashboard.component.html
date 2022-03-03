@@ -1,1 +1,91 @@
-<p>dashboard works!</p>
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-6 mb-sm-4">
+                <mat-card>
+                    <div class="card-icon cset-card">
+                        <i class="material-icons">content_copy</i>
+                    </div>
+                    <br> <br> <br>
+                    <mat-card-subtitle>CSET</mat-card-subtitle>
+                    <mat-card-footer class="text-center p-1">Available Version: 0.0.0</mat-card-footer>
+                   
+                </mat-card>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <mat-card>
+                    <div class="card-icon con-pca-card">
+                        <i class="material-icons">store</i>
+                    </div>
+                    <br> <br> <br>
+                    <mat-card-subtitle>Con-PCA</mat-card-subtitle>
+                    <mat-card-footer class="text-center p-1">Available Version: 0.0.0</mat-card-footer>
+                </mat-card>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <mat-card>
+                    <div class="card-icon cyber-champ-card">
+                        <i class="material-icons">content_copy</i>
+                    </div>
+                    <br> <br> <br>
+                    <mat-card-subtitle>Cyber-Champ</mat-card-subtitle>
+                    <mat-card-footer class="text-center p-1">Available Version: 0.0.0</mat-card-footer>
+                </mat-card>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <mat-card>
+                    <div class="card-icon malcom-card">
+                        <i class="material-icons">content_copy</i>
+                    </div>
+                    <br><br><br>
+                    <mat-card-subtitle>Malcom</mat-card-subtitle>
+                    <mat-card-footer class="text-center p-1">Available Version: 0.0.0</mat-card-footer>
+                </mat-card>
+            </div>
+        </div>
+        <div class="row mt-5">
+                <div class="col-md-8 mx-auto">
+                <mat-card>
+                    <div class="card-icon main-card text-center w-100">
+                        <i class="material-icons">assignment_turned_in</i> <h2 class="d-inline">Overall Scores</h2>
+                    </div>
+                    <br> <br>
+                    <mat-card-subtitle></mat-card-subtitle>
+                    <mat-card-content>
+                        <div  class="pl-3 mx-auto justify-content-center" style="width: 50%;">
+  
+                            <canvas
+                            baseChart
+                            [chartType]="'pie'"
+                          [legend]="true"
+                          [datasets]="chartData"
+                          [labels]="chartLabels"
+                          [options]="chartOptions"
+                          [colors]="colors"
+                       
+                          >
+                          </canvas>
+                          </div>
+                    </mat-card-content>
+                    <mat-card-footer class="text-center p-1">Overall Scores percentage</mat-card-footer>
+                   
+                </mat-card>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 mb-sm-4">
+
+            </div>
+            <div class="col-sm-6 mb-sm-4">
+
+            </div>
+            <div class="col-sm-6 mb-sm-4">
+
+            </div>
+            <div class="col-sm-6 mb-sm-4">
+
+            </div>
+        </div>
+    </div>
+
+</div>

@@ -471,3 +471,25 @@ li.nav-item.active {
   text-align: center;
   display: block;
 }
+.card-icon{
+  border-radius: 3px;
+  background-color: #999999;
+  padding: 15px;
+  margin-top: -20px !important;
+  margin-right: 15px;
+  float: left;
+  box-shadow: 0 4px 20px 0px rgb(0 0 0 / 14%), 0 7px 10px -5px rgb(255 152 0 / 40%);
+  /* background: linear-gradient(60deg, #ffa726, #fb8c00); */
+}
+.cset-card.card-icon  {
+  background:linear-gradient(60deg, #005288, #005287);
+}
+.con-pca-card {
+  background: linear-gradient(60deg, #66bb6a, #43a047);
+}
+.malcom-card{
+  background: linear-gradient(60deg, #ffa726, #fb8c00);
+}
+.cyber-champ-card{
+  background: linear-gradient(60deg, #ab47bc, #8e24aa);
+}
