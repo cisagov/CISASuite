@@ -29,18 +29,21 @@ import { CsetComponent } from './cset/cset.component';
 import { MalcomComponent } from './malcom/malcom.component';
 import { ConpcaComponent } from './conpca/conpca.component';
 import { CyberchampComponent } from './cyberchamp/cyberchamp.component';
+import { LeftsidenavComponent } from './leftsidenav/leftsidenav.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 
 
 const appRoutes : Routes =[
-{ path: "" , component: MainPageComponent},
-{ path:"toolsuite", component: ToolsuiteComponent},
-{ path:"scores", component: ScoresComponent},
-{ path:"cset", component: CsetComponent},
-{ path:"malcom", component: MalcomComponent},
-{ path:"cyberchamp", component: CyberchampComponent},
-{ path:"conpca", component: ConpcaComponent},
-]
+  // { path: "" , component: MainPageComponent},
+  { path:"toolsuite", component: ToolsuiteComponent},
+  { path:"scores", component: ScoresComponent},
+  { path:"cset", component: CsetComponent},
+  { path:"malcom", component: MalcomComponent},
+  { path:"cyberchamp", component: CyberchampComponent},
+  { path:"conpca", component: ConpcaComponent},
+  { path:"dashboard", component: DashboardComponent},
+  ]
 
 @NgModule({
   declarations: [
@@ -53,7 +56,9 @@ const appRoutes : Routes =[
     CsetComponent,
     MalcomComponent,
     ConpcaComponent,
-    CyberchampComponent
+    CyberchampComponent,
+    LeftsidenavComponent,
+    DashboardComponent
    ],
   imports: [
     BrowserModule,
