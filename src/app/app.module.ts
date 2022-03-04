@@ -35,7 +35,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 
 
 const appRoutes : Routes =[
-  // { path: "" , component: MainPageComponent},
+  { path: "" , component: DashboardComponent},
   { path:"toolsuite", component: ToolsuiteComponent},
   { path:"scores", component: ScoresComponent},
   { path:"cset", component: CsetComponent},

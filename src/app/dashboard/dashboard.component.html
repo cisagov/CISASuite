@@ -1,19 +1,18 @@
 <div class="main-content">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-lg-3 col-md-6 col-sm-6 mb-sm-4">
-                <mat-card>
+            <div class="col-lg-3 col-md-6 col-sm-6 mb-md-4 mb-lg-0">
+                <mat-card appMaterialElevation [defaultElevation]="defaultElevation+1" [raisedElevation]="raisedElevation" class="h-100 mb-2">
                     <div class="card-icon cset-card">
-                        <i class="material-icons">content_copy</i>
+                        <i class="material-icons">account_circle</i>
                     </div>
                     <br> <br> <br>
                     <mat-card-subtitle>CSET</mat-card-subtitle>
                     <mat-card-footer class="text-center p-1">Available Version: 0.0.0</mat-card-footer>
-                   
-                </mat-card>
+                  </mat-card>
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-6">
-                <mat-card>
+            <div class="col-lg-3 col-md-6 col-sm-6 mb-md-4 mb-lg-0">
+                <mat-card appMaterialElevation [defaultElevation]="defaultElevation+1" [raisedElevation]="raisedElevation" class="h-100">
                     <div class="card-icon con-pca-card">
                         <i class="material-icons">store</i>
                     </div>
@@ -22,8 +21,8 @@
                     <mat-card-footer class="text-center p-1">Available Version: 0.0.0</mat-card-footer>
                 </mat-card>
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-6">
-                <mat-card>
+            <div class="col-lg-3 col-md-6 col-sm-6 mb-md-4 mb-lg-0">
+                <mat-card appMaterialElevation [defaultElevation]="defaultElevation+1" [raisedElevation]="raisedElevation" class="h-100">
                     <div class="card-icon cyber-champ-card">
                         <i class="material-icons">content_copy</i>
                     </div>
@@ -32,10 +31,10 @@
                     <mat-card-footer class="text-center p-1">Available Version: 0.0.0</mat-card-footer>
                 </mat-card>
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-6">
-                <mat-card>
+            <div class="col-lg-3 col-md-6 col-sm-6 mb-md-4 mb-lg-0">
+                <mat-card appMaterialElevation [defaultElevation]="defaultElevation+1" [raisedElevation]="raisedElevation" class="h-100">
                     <div class="card-icon malcom-card">
-                        <i class="material-icons">content_copy</i>
+                        <i class="material-icons">account_balance</i>
                     </div>
                     <br><br><br>
                     <mat-card-subtitle>Malcom</mat-card-subtitle>
@@ -44,8 +43,8 @@
             </div>
         </div>
         <div class="row mt-5">
-                <div class="col-md-8 mx-auto">
-                <mat-card>
+                <div class="col-lg-8 mx-auto">
+                <mat-card appMaterialElevation [defaultElevation]="defaultElevation+1" [raisedElevation]="raisedElevation" class="h-100 mb-2">
                     <div class="card-icon main-card text-center w-100">
                         <i class="material-icons">assignment_turned_in</i> <h2 class="d-inline">Overall Scores</h2>
                     </div>
@@ -72,18 +71,96 @@
                 </mat-card>
             </div>
         </div>
-        <div class="row">
-            <div class="col-sm-6 mb-sm-4">
-
+        <div class="row mt-4">
+            <div class="col-lg-6 mb-sm-4 text-center">
+             <mat-card appMaterialElevation [defaultElevation]="defaultElevation+1" [raisedElevation]="raisedElevation" class="h-100 mb-2">
+               <mat-card-title>CSET </mat-card-title>
+               <mat-card-subtitle>Assessment Overall</mat-card-subtitle>
+                <div  class="pl-3 mx-auto justify-content-center" style="width: 50%;">
+    
+                    <canvas
+                    baseChart
+                    [chartType]="'pie'"
+                  [legend]="true"
+                  [datasets]="chartDataCset"
+                  [labels]="chartLabelsCset"
+                  [options]="chartOptions"
+                  [colors]="colorsCset"
+               
+                  >
+                  </canvas>
+                  </div>
+             </mat-card>
             </div>
-            <div class="col-sm-6 mb-sm-4">
-
+            <div class="col-lg-6 mb-sm-4 text-center">
+                <mat-card appMaterialElevation [defaultElevation]="defaultElevation+1" [raisedElevation]="raisedElevation" class="h-100 mb-2">
+                    <mat-card-title>CON-PCA</mat-card-title>
+                    <mat-card-subtitle>Assessment Overall</mat-card-subtitle>
+                     <div  class="pl-3 mx-auto justify-content-center" style="width: 50%;">
+         
+                         <canvas
+                         baseChart
+                         [chartType]="'pie'"
+                       [legend]="true"
+                       [datasets]="chartDataconpca"
+                       [labels]="chartLabelsconpca"
+                       [options]="chartOptions"
+                       [colors]="colorsconpca"
+                    
+                       >
+                       </canvas>
+                       </div>
+                  </mat-card>
             </div>
-            <div class="col-sm-6 mb-sm-4">
-
+            <div class="col-lg-6 mb-sm-4 text-center">
+                <mat-card appMaterialElevation [defaultElevation]="defaultElevation+1" [raisedElevation]="raisedElevation" class="h-100">
+                    <mat-card-title>MALCOM</mat-card-title>
+                    <mat-card-subtitle>Assessment Overall</mat-card-subtitle>
+                     <div  class="pl-3 mx-auto justify-content-center" style="width: 70%;">
+         
+                         <canvas
+                         baseChart
+                         [chartType]="'bar'"
+                       [legend]="true"
+                       [datasets]="chartDatamalcom"
+                       [labels]="chartLabelsmalcom"
+                       [options]="chartOptions"
+                       [colors]="colorsmalcom"
+                       >
+                       </canvas>
+                       </div>
+                       <mat-card-footer>3 Outdated Network Protocol
+                        <br>
+                        3 Remote Access Protocols
+                    </mat-card-footer>
+                  </mat-card>
             </div>
-            <div class="col-sm-6 mb-sm-4">
-
+            <div class="col-lg-6 mb-sm-4 mh-md-50">
+                <mat-card appMaterialElevation [defaultElevation]="defaultElevation+1" [raisedElevation]="raisedElevation" class="h-100">
+                    <mat-card-title class="text-center">Cyber-Champ</mat-card-title>
+                    <mat-card-subtitle class="text-center">Assessment Overall</mat-card-subtitle>
+                     <!-- <div  class="pl-3 mx-auto justify-content-center" style="width: 70%;">
+         
+                         <canvas
+                         baseChart
+                         [chartType]="'bar'"
+                       [legend]="true"
+                       [datasets]="chartDatacyber"
+                       [labels]="chartLabelscyber"
+                       [options]="chartOptions"
+                       [colors]="colorscyber"
+                       >
+                       </canvas>
+                       </div> -->
+                       <canvas id="myChart" style="width: 50%;"></canvas>
+                       <mat-card-footer class="m-3 justify-content-around">Your staff have completed 50% of the recommended training based on your assessment, phishing, and network evaluation scores. We recommend that you add 2 additional roles to your cybersecurity Program:
+                        <br>
+                        <div class="text-left">
+                            <div><i class="material-icons">check</i> Phishing Simulation Coordinator</div>
+                            <div><i class="material-icons">check</i> Network Engineer dedicated to monitoring and traffic analysis</div>
+                        </div>
+                    </mat-card-footer>
+                  </mat-card>
             </div>
         </div>
     </div>
