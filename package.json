@@ -50,7 +50,7 @@
     "@types/node": "^12.11.1",
     "concurrently": "^7.0.0",
     "cross-var": "^1.1.0",
-    "electron": "^16.0.7",
+    "electron": "^18.3.7",
     "electron-installer-dmg": "^3.0.0",
     "electron-packager": "^15.4.0",
     "jasmine-core": "~3.8.0",
